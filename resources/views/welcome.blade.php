@@ -17,12 +17,11 @@
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
-                height: 100vh;
                 margin: 0;
             }
 
             .full-height {
-                height: 100vh;
+                height: 35vh;
             }
 
             .flex-center {
@@ -63,17 +62,13 @@
                 margin-bottom: 30px;
             }
         </style>
+
+
     </head>
     <body>
         
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
-                </div>
-            @endif
-
+            
             <div class="content">
                 <div class="title m-b-md">
                     ONLINE MUEBLE BUILDER
@@ -89,6 +84,16 @@
             </div>
         </div>
 
+        <div class="flex-center position-ref full-height" >
+        <img src="/OnlineMuebleBuilder/MuebleBuilder/public/images/mueble.stl" class="imgSTL" alt="imagen STL"  />
+        </div>
+        <script>
+        window.onload=function(){
+        alert(document.images[0].getAttribute("src"));
+        }
+        </script>
+
+        
         <div id="contenedorSvg" align="center">
         </div>
         <script>
