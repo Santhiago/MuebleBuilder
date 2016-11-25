@@ -9,6 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="b4w.full.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
 
         <!-- Styles -->
         <style>
@@ -61,8 +63,16 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            #container_id {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
         </style>
 
+             
 
     </head>
     <body>
@@ -75,25 +85,17 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">SALON</a>
-                    <a href="https://laracasts.com">COMEDOR</a>
-                    <a href="https://laravel-news.com">DORMITORIO</a>
-                    <a href="https://forge.laravel.com">BAÑO</a>
+                    <a href="">SALON</a>
+                    <a href="">COMEDOR</a>
+                    <a href="">DORMITORIO</a>
+                    <a href="">BAÑO</a>
                     
                 </div>
             </div>
         </div>
 
-        <div class="flex-center position-ref full-height" >
-        <img src="/OnlineMuebleBuilder/MuebleBuilder/public/images/mueble.stl" class="imgSTL" alt="imagen STL"  />
-        </div>
-        <script>
-        window.onload=function(){
-        alert(document.images[0].getAttribute("src"));
-        }
-        </script>
+        <div id="container_id"></div>
 
-        
         <div id="contenedorSvg" align="center">
         </div>
         <script>
