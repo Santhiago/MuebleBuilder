@@ -9,10 +9,10 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <script src="../js/build/three.min.js"></script>
-        <script src="../js/loaders/STLLoader.js"></script>
-        <script src="../js/build/Detector.js"></script>
-        <script src="../js/build/Stats.js"></script>
+        <script src="../public/js/build/three.min.js"></script>
+        <script src="../public/js/loaders/STLLoader.js"></script>
+        <script src="../public/js/build/Detector.js"></script>
+        <script src="../public/js/build/Stats.js"></script>
 
         <!-- Styles -->
         <style>
@@ -339,7 +339,7 @@
                     // }
                     new THREE.MeshLambertMaterial({
                         overdraw:true,
-                        color: 0xFFFF00,
+                        color: 0xffff00,
                         shading: THREE.FlatShading
                     }
                 ));
@@ -499,7 +499,7 @@
                     console.log(e);
                 }
                 
-                xhr.open( "GET", '../models/stl/binario/untitled.stl', true );
+                xhr.open( "GET", '../public/models/stl/binario/lutyens_chair.stl', true );
                 xhr.responseType = "arraybuffer";
                 //xhr.setRequestHeader("Accept","text/plain");
                 //xhr.setRequestHeader("Content-Type","text/plain");
@@ -522,7 +522,7 @@
                 // note: three.js includes requestAnimationFrame shim
                 requestAnimationFrame( animate );
                 render();
-                stats.update();
+                //stats.update();
 
             }
 
